@@ -48,10 +48,19 @@ function Button({
     asChild?: boolean
   }) {
   const Comp = asChild ? Slot : "button"
-  const Motion = motion.create(Comp as any)
+
+  if (asChild) {
+    return (
+      <Slot
+        data-slot="button"
+        className={cn(buttonVariants({ variant, size, className }))}
+        {...props}
+      />
+    )
+  }
 
   return (
-    <Motion
+    <motion.button
       initial={{ scale: 1 }}
       whileTap={{ scale: size === 'lg' ? 1 : 0.93 }}
       transition={{ ease: [0, 1, 0, 1], delay: 0, duration: 0.03 }}
