@@ -5,10 +5,10 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 const settings = {
-  title: 'Start using our app today.',
-  description: 'Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea.',
+  title: 'Ready to revolutionize drug discovery?',
+  description: 'Join the quantum revolution in pharmaceutical research. Q-VEDHA combines quantum computing, AI, and reinforcement learning to accelerate drug development from years to moments.',
   CTA: {
-    content: 'Start your free trial',
+    content: 'Start Free Trial',
     href: '#'
   }
 }

@@ -1,24 +1,23 @@
 'use client'
 
-import { Facebook, Github, Instagram, Youtube } from "lucide-react"
+import { Github, Instagram, Youtube } from "lucide-react"
 import Link from "next/link"
 
 const settings = {
   links: [
-    { title: 'About', href: '/' },
-    { title: 'Blog', href: '/' },
-    { title: 'Jobs', href: '/' },
-    { title: 'Press', href: '/' },
-    { title: 'Affiliate', href: '/' },
+    { title: 'About Q-VEDHA', href: '/' },
+    { title: 'Research', href: '/' },
+    { title: 'Documentation', href: '/' },
+    { title: 'Proxima Framework', href: '#framework' },
+    { title: 'Partners', href: '#testimonials' },
     { title: 'Contact Us', href: '/' },
   ],
   socialMedia: [
-    { title: 'Facebook', icon: Facebook, href: '/' },
-    { title: 'Instagram', icon: Instagram, href: '/' },
     { title: 'Github', icon: Github, href: '/' },
     { title: 'Youtube', icon: Youtube, href: '/' },
+    { title: 'Instagram', icon: Instagram, href: '/' },
   ],
-  copyright: '© 2024 Your Company, Inc. All rights reserved.'
+  copyright: '© 2024 Q-VEDHA. Powered by IonQ. All rights reserved.'
 }
 
 export default function Footer() {

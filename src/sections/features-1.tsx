@@ -9,35 +9,34 @@ import Image from "next/image"
 const settings = {
   badge: {
     number: 1,
-    text: 'get started in seconds',
+    text: 'CORE CAPABILITIES',
   },
-  title: 'Set Up in Minutes',
-  description: 'Simply add the script to your site, choose from a variety of plugins, or go for the API backend integration. Pirsch is the plug-and-play Google Analytics alternative.',
+  title: 'Built for the Speed of Modern Medicine',
+  description: 'Four core capabilities that redefine how drugs are discovered, tested, and validated.',
   card_1: {
-    title: 'Effortless Setup',
-    content: 'Pirsch offers plugins, libraries, and tutorials for the most popular CMSs, website builders, and programming languages to get you up and running in no time.',
+    title: 'Quantum Molecular Simulation',
+    content: 'Leverage quantum circuits, gates, and energy-state analysis to simulate complex molecular interactions beyond classical limits.',
     carousel_images: [
-      'https://cdn.worldvectorlogo.com/logos/react-2.svg',
-      'https://cdn.worldvectorlogo.com/logos/vue-9.svg',
-      'https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg',
-      'https://cdn.worldvectorlogo.com/logos/nestjs.svg',
-      'https://cdn.worldvectorlogo.com/logos/laravel-2.svg',
-      'https://cdn.worldvectorlogo.com/logos/svelte-1.svg',
-      'https://cdn.worldvectorlogo.com/logos/golang-1.svg',
-      'https://cdn.worldvectorlogo.com/logos/rust.svg',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/3840px-Python-logo-notext.svg.png',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/TensorFlow_logo.svg/1280px-TensorFlow_logo.svg.png',
+      'https://quantumzeitgeist.com/wp-content/uploads/qis.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/IonQ_corp_logo.svg/1280px-IonQ_corp_logo.svg.png',
+      'https://dzh2zima160vx.cloudfront.net/logo/1fa45d060414496543382a8ac05ed9fb_320_160?Expires=1861920000&Signature=HnaXGrJFmyF24gdklXJTt5NjxulRcdYYTu7RyFXn8ZwLmToCAAz7opTVQSLW270~lXesqOUAN8DLIjLCbKDGUCGVHyaSf9Mn13br30z3BsUopKlE9WHOrUjiS6kc4E85808s8~YwRieF6384jgdQKvgz2j0QRDv3vpZ3pGWqgvFoQIOdu~T7DGvgAr0EbzxLZv6uwLUOEcOe24ZZCqFqDsbFgHuaQ7gU9KQQXL0jcro54Xq6ykaKh73A~-ATPTOe9kuBnmRhHwLfp42imi0vnXb8r8COtgTuCiHK8eyWbM35gacCAuTd61dSKheMO30ZONdRlYdHrlLe172BHYzN5A__&Key-Pair-Id=APKAII5OVX4LZ3WT422Q',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1920px-ISO_C%2B%2B_Logo.svg.png',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/1280px-Rust_programming_language_black_logo.svg.png',
     ]
   },
   card_2: {
-    title: 'Seamless Switch',
-    content: 'Migrating from other web analytics solutions? Import your data from Plausible, Fathom, or Google Analytics in just a few clicks and easily continue where you left off.'
+    title: 'AI-Driven Drug Synthesis',
+    content: 'Reinforcement learning and quantum algorithms generate and optimize drug candidates with high simulation fidelity.'
   },
   card_3: {
-    title: 'No Cookie Banner',
-    content: 'Say goodbye to consent banners: Pirsch works without cookies and never stores your visitors personal identifiable information.'
+    title: 'Real-Time Quantum Optimization',
+    content: '1024 iterative quantum-AI cycles ensure only the most stable, viable drug candidate survives.',
   },
   card_4: {
-    title: 'Privacy-Friendly by Design',
-    content: 'Built from the ground up with privacy in mind and with an open-source core, Pirsch offers uncompromising GDPR, CCPA, PECR, and Schrems II compliant data protection. All data is hosted on a secure server cluster in Germany.',
+    title: 'Virtual Human Twin Validation',
+    content: 'Survival constant optimization (λ ≥ 0.8). Test drug behavior on a digital twin of human biological pathways before real-world trials.',
     image: 'https://framerusercontent.com/images/6jTglLZFhLYMIuOe7EC0QFeykU.png?scale-down-to=512',
   },
 }

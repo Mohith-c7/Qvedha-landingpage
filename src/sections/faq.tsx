@@ -12,20 +12,28 @@ const settings = {
   title: 'Frequently asked questions',
   faqs: [
     {
-      question: 'Why is the sky blue?',
-      answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laboriosam neque reprehenderit saepe eius dolorum vel consequuntur perspiciatis ad vero.',
+      question: 'What is Q-VEDHA?',
+      answer: 'Q-VEDHA is the world\'s first Quantum-AI drug discovery engine that combines quantum computing, artificial intelligence, and reinforcement learning to accelerate pharmaceutical research from years to moments.',
     },
     {
-      question: 'Why did the chicken cross the road?',
-      answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laboriosam neque reprehenderit saepe eius dolorum vel consequuntur perspiciatis ad vero.',
+      question: 'How does quantum computing help in drug discovery?',
+      answer: 'Quantum computing enables us to simulate molecular interactions at the quantum level with unprecedented accuracy. This allows us to analyze billions of molecular combinations, predict drug efficacy with 99.7% accuracy, and reduce development time from 10+ years to months.',
     },
     {
-      question: 'How many licks does it take to get to the center of a tootsie pop?',
-      answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laboriosam neque reprehenderit saepe eius dolorum vel consequuntur perspiciatis ad vero.',
+      question: 'What is the Proxima Framework?',
+      answer: 'Proxima is our open-source framework that lets you pull any language model from any provider, equip it with quantum and classical tools, and run it on any inference platform. It bridges classical AI and quantum computing with a unified API.',
     },
     {
-      question: "Where's Waldo?",
-      answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laboriosam neque reprehenderit saepe eius dolorum vel consequuntur perspiciatis ad vero.',
+      question: 'Who sponsors Q-VEDHA?',
+      answer: 'Q-VEDHA is proudly sponsored by IonQ, the leader in trapped-ion quantum computing. Together, we\'re pioneering the next generation of pharmaceutical innovation using quantum technology.',
+    },
+    {
+      question: 'How accurate is the Virtual Human Twin validation?',
+      answer: 'Our Virtual Human Twin technology models patient states and optimizes survival constants (λ ≥ 0.8) using reinforcement learning. This eliminates early-stage trial risk and continuously improves outcomes through AI-driven optimization.',
+    },
+    {
+      question: 'Can I integrate Q-VEDHA with my existing research?',
+      answer: 'Yes! The Proxima framework is designed for seamless integration. You can pull any LLM (GPT, Claude, Gemini, Llama), add quantum and classical tools, and deploy on any inference provider (IonQ, AWS Braket, Azure Quantum).',
     },
   ]
 }

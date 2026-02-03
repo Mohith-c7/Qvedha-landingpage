@@ -5,23 +5,17 @@ import Card from "@/components/card"
 import SlideEffect from "@/components/slide-effect"
 import Spinner from "@/components/spinner"
 import TextRevealEffect from "@/components/text-reveal-effect"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
 
 const settings = {
   badge: {
-    number: 4,
-    text: 'SMART TEAMWORK',
+    number: 6,
+    text: 'REAL-WORLD IMPACT',
   },
-  title: 'Empower People With Data',
-  description: 'Reduce friction and enhance productivity by getting the right information to the right people with minimal effort, enabling them to thrive and excel.',
+  title: 'Where Q-VEDHA Makes Impact',
+  description: 'Designed for real-world medical and research challenges.',
   card_1: {
-    title: 'Easily Manage Teams and Sites',
-    content: "Work happens in teams. That's why Pirsch enables collaboration right from the start: Simply invite team members or clients via email, assign them roles, and give them access to the dashboards they need to excel. All people, sites and custom themes in one place.",
-    CTA: {
-      content: 'Start 30-day Free Trial',
-      href: '#'
-    },
+    title: 'Protein & Sequence Validation',
+    content: "Validate drug-protein compatibility using quantum simulations.",
     labels: [
       'my-site.com',
       'example.com',
@@ -42,12 +36,12 @@ const settings = {
     ]
   },
   card_2: {
-    title: 'Receive Automatic Email Reports',
-    content: 'Keep colleagues, customers, or partners in the loop with automatic email reports. Regularly receive a concise summary of the latest activities with just one click.',
+    title: 'Rare Disease Research',
+    content: 'Explore complex molecular structures that classical systems struggle with.',
   },
   card_3: {
-    title: 'Share Dashboards With Anybody',
-    content: 'Working with external partners? Create unique access links to securely grant access to dashboards or make them public on your personal subdomain.',
+    title: 'Pandemic Drug Acceleration',
+    content: 'Rapid hypothesis testing for emerging viral mutations.',
   },
 }
 
@@ -72,10 +66,7 @@ export default function Features4() {
           <Card className="flex flex-col lg:flex-row justify-center items-center">
             <div className="space-y-3 md:space-y-5 flex-1">
               <h3 className="text-xl md:text-title text-primary font-medium">{settings.card_1.title}</h3>
-              <p className="mb-8 lg:mb-16 text-foreground/80">{settings.card_1.content}</p>
-              <Link href={settings.card_1.CTA.href}>
-                <Button variant='secondary'>{settings.card_1.CTA.content}</Button>
-              </Link>
+              <p className="text-foreground/80">{settings.card_1.content}</p>
             </div>
 
             <Spinner labels={settings.card_1.labels} avatars={settings.card_1.avatars} />
