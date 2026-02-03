@@ -68,7 +68,7 @@ export const seoConfig = {
     description: 'World\'s first quantum drug discovery platform powered by IonQ',
     url: 'https://q-vedha.com',
     logo: 'https://q-vedha.com/icon1.png',
-    foundingDate: '2024',
+    foundingDate: '2026',
     industry: 'Pharmaceutical Technology',
     numberOfEmployees: {
       '@type': 'QuantitativeValue',

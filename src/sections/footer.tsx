@@ -17,7 +17,7 @@ const settings = {
     { title: 'Youtube', icon: Youtube, href: '/' },
     { title: 'Instagram', icon: Instagram, href: '/' },
   ],
-  copyright: '© 2024 Q-VEDHA. Powered by IonQ. All rights reserved.'
+  copyright: '© 2026 Q-VEDHA. Powered by IonQ. All rights reserved.'
 }
 
 export default function Footer() {
