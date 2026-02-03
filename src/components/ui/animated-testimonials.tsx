@@ -116,13 +116,13 @@ export const AnimatedTestimonials = ({
               ease: "easeInOut",
             }}
           >
-            <h3 className="text-2xl font-bold text-black">
+            <h3 className="text-2xl font-bold text-primary">
               {testimonials[active].name}
             </h3>
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-foreground/60">
               {testimonials[active].designation}
             </p>
-            <motion.p className="mt-8 text-base text-gray-500">
+            <motion.p className="mt-8 text-base text-foreground/80">
               {testimonials[active].quote.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
@@ -152,19 +152,19 @@ export const AnimatedTestimonials = ({
           <div className="flex gap-4">
             <button
               onClick={handlePrev}
-              className="group/button flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-muted active:scale-95 transition-all"
+              className="group/button flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-muted/50 border border-border/50 hover:bg-muted active:scale-95 transition-all"
               name="Previous"
               title="Previous"
             >
-              <IconArrowLeft className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:rotate-12" />
+              <IconArrowLeft className="h-5 w-5 text-accent transition-transform duration-300 group-hover/button:rotate-12" />
             </button>
             <button
               onClick={handleNext}
-              className="group/button flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-muted active:scale-95 transition-all"
+              className="group/button flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-muted/50 border border-border/50 hover:bg-muted active:scale-95 transition-all"
               name="Next"
               title="Next"
             >
-              <IconArrowRight className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:-rotate-12" />
+              <IconArrowRight className="h-5 w-5 text-accent transition-transform duration-300 group-hover/button:-rotate-12" />
             </button>
           </div>
         </div>

@@ -25,21 +25,21 @@ export default function Footer() {
   return (
     <footer className="w-full py-8 md:py-16 flex flex-col items-center justify-center gap-7 md:gap-10 text-sm border-t border-border">
       {/* Nav Links */}
-      <div className="flex flex-wrap md:flex-row items-center justify-center gap-7 md:gap-10">
+      <div className="flex flex-wrap md:flex-row items-center justify-center gap-7 md:gap-10 text-foreground/70 hover:text-foreground transition-colors">
         {settings.links.map(link => (
-          <Link key={link.title} href={link.href}>{link.title}</Link>
+          <Link key={link.title} href={link.href} className="hover:text-primary transition-colors">{link.title}</Link>
         ))}
       </div>
 
       {/* Social links */}
-      <div className="flex flex-wrap md:flex-row items-center justify-center gap-7 md:gap-10">
+      <div className="flex flex-wrap md:flex-row items-center justify-center gap-7 md:gap-10 text-foreground/70 hover:text-foreground">
         {settings.socialMedia.map((social, index) => (
-          <Link title={social.title} key={index} href={social.href}><social.icon /></Link>
+          <Link title={social.title} key={index} href={social.href} className="hover:text-accent transition-colors"><social.icon size={20} /></Link>
         ))}
       </div>
 
       {/* copyright */}
-      <p className="text-center">{settings.copyright}</p>
+      <p className="text-center text-foreground/60">{settings.copyright}</p>
     </footer>
   )
 }
