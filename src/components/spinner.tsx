@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import * as motion from "motion/react-m"
+import * as motion from "motion/react"
 import Image from 'next/image'
 import { cn } from '@/lib/utils'
 import FadeEffect from './fade-effect'
