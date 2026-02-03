@@ -1,10 +1,12 @@
 'use client'
 
 import React from 'react'
-import * as motion from "motion/react-m"
+import { motion as Motion } from "motion/react"
 import Image from 'next/image'
 import { cn } from '@/lib/utils'
 import FadeEffect from './fade-effect'
+
+const motion = Motion as any
 
 interface SpinnerProps {
   avatars: string[]
@@ -15,7 +17,6 @@ interface SpinnerProps {
 const AvatarsCircle = ({ avatars }: { avatars: string[] }) => {
   const radius = 180 * 1.6; // Adjust this value to change circle size
   const center = radius;
-  const MotionImage = motion.create(Image);
 
   return (
     <motion.div
@@ -43,7 +44,7 @@ const AvatarsCircle = ({ avatars }: { avatars: string[] }) => {
         const y = radius * Math.sin(radians);
 
         return (
-          <MotionImage
+          <motion.div
             initial={{
               transform: 'translate(-50%, -50%) rotate(0deg)',
             }}
@@ -55,18 +56,22 @@ const AvatarsCircle = ({ avatars }: { avatars: string[] }) => {
                 ease: 'linear',
               }
             }}
-            alt='Avatar'
-            src={avatar}
-            width={200}
-            height={200}
             key={index}
-            className="absolute w-16 h-16 flex items-center justify-center text-white shadow-sm rounded-full"
+            className="absolute w-16 h-16 flex items-center justify-center shadow-sm rounded-full overflow-hidden"
             style={{
               left: `${center + x}px`,
               top: `${center + y}px`,
               transform: 'translate(-50%, -50%)',
             }}
-          />
+          >
+            <Image
+              alt='Avatar'
+              src={avatar}
+              width={64}
+              height={64}
+              className="w-full h-full object-cover"
+            />
+          </motion.div>
         );
       })}
     </motion.div>
@@ -116,7 +121,7 @@ const LabelsCircle = ({ labels }: { labels: string[] }) => {
               }
             }}
             key={index}
-            className="absolute min-w-32 px-4 py-2 text-sm flex items-center justify-center text-black bg-accent rounded-lg"
+            className="absolute min-w-32 px-4 py-2 text-sm flex items-center justify-center text-background bg-accent rounded-lg"
             style={{
               left: `${center + x}px`,
               top: `${center + y}px`,

@@ -52,7 +52,7 @@ export default function Features1() {
 
       {/* Title */}
       <SlideEffect>
-        <h2 className="text-2xl md:text-4xl lg:text-header capitalize font-medium leading-none text-transparent bg-clip-text bg-gradient-to-b from-black to-black/60">{settings.title}</h2>
+        <h2 className="text-2xl md:text-4xl lg:text-header capitalize font-medium leading-none text-transparent bg-clip-text bg-gradient-to-b from-primary to-primary/70">{settings.title}</h2>
       </SlideEffect>
 
       {/* Description */}
@@ -63,8 +63,8 @@ export default function Features1() {
         {/* card 1 */}
         <SlideEffect direction="right" className="col-span-1 lg:col-span-3 h-full" isSpring={false}>
           <Card>
-            <h3 className="text-xl md:text-title text-black font-medium">{settings.card_1.title}</h3>
-            <p className="mb-4">{settings.card_1.content}</p>
+            <h3 className="text-xl md:text-title text-primary font-medium">{settings.card_1.title}</h3>
+            <p className="mb-4 text-foreground/80">{settings.card_1.content}</p>
             <Carousel images={settings.card_1.carousel_images} />
           </Card>
         </SlideEffect>
@@ -72,16 +72,16 @@ export default function Features1() {
         {/* card 2 */}
         <SlideEffect direction="left" duration={1.3} className="col-span-1 lg:col-span-2 h-full" isSpring={false}>
           <Card>
-            <h3 className="text-xl md:text-title text-black font-medium">{settings.card_2.title}</h3>
-            <p>{settings.card_2.content}</p>
+            <h3 className="text-xl md:text-title text-primary font-medium">{settings.card_2.title}</h3>
+            <p className="text-foreground/80">{settings.card_2.content}</p>
           </Card>
         </SlideEffect>
 
         {/* card 3 */}
         <SlideEffect direction="right" duration={1} className="col-span-1 lg:col-span-2 h-full" isSpring={false}>
           <Card>
-            <h3 className="text-xl md:text-title text-black font-medium">{settings.card_3.title}</h3>
-            <p>{settings.card_3.content}</p>
+            <h3 className="text-xl md:text-title text-primary font-medium">{settings.card_3.title}</h3>
+            <p className="text-foreground/80">{settings.card_3.content}</p>
           </Card>
         </SlideEffect>
 
@@ -89,8 +89,8 @@ export default function Features1() {
         <SlideEffect direction="left" className="col-span-1 lg:col-span-3 h-full" isSpring={false}>
           <Card className="flex flex-col lg:flex-row justify-center items-center">
             <div className="space-y-3 md:space-y-5">
-              <h3 className="text-xl md:text-title text-black font-medium">{settings.card_4.title}</h3>
-              <p>{settings.card_4.content}</p>
+              <h3 className="text-xl md:text-title text-primary font-medium">{settings.card_4.title}</h3>
+              <p className="text-foreground/80">{settings.card_4.content}</p>
             </div>
 
             <Image className="w-32 my-auto mx-auto" src={settings.card_4.image} alt={settings.card_4.title} width={512} height={512} />

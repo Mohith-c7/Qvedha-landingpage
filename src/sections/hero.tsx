@@ -63,14 +63,14 @@ export default function Hero() {
 
       <section className="flex flex-col gap-8 lg:gap-11 items-center text-center">
         {/* Headline */}
-        <h1 className="text-black text-4xl md:text-6xl lg:text-hero font-medium tracking-tight leading-none xl:max-w-3/4">
-          <TextBlurEffect className='text-transparent bg-clip-text bg-gradient-to-b from-black to-black/60'>{settings.headline}</TextBlurEffect>
+        <h1 className="text-primary text-4xl md:text-6xl lg:text-hero font-medium tracking-tight leading-none xl:max-w-3/4">
+          <TextBlurEffect className='text-transparent bg-clip-text bg-gradient-to-b from-primary via-primary to-primary/70'>{settings.headline}</TextBlurEffect>
         </h1>
 
         {/* Sub-headline */}
         <SlideEffect
           delay={0}
-          className="text-sm lg:text-base px-6 sm:px-10 md:px-0 md:max-w-3/4 mx-auto"
+          className="text-sm lg:text-base px-6 sm:px-10 md:px-0 md:max-w-3/4 mx-auto text-foreground/80"
         >
           {settings.subheadline}
         </SlideEffect>
@@ -94,11 +94,11 @@ export default function Hero() {
             </Link>
 
             <Link href={settings.secondaryCTA.href} className="w-full">
-              <Button size='lg' className="capitalize w-full hidden lg:flex" variant='secondary'>
+              <Button size='lg' className="capitalize w-full hidden lg:flex" variant='outline'>
                 {settings.secondaryCTA.content}
               </Button>
 
-              <Button size='default' className="capitalize w-full flex lg:hidden" variant='secondary'>
+              <Button size='default' className="capitalize w-full flex lg:hidden" variant='outline'>
                 {settings.secondaryCTA.content}
               </Button>
             </Link>
@@ -110,14 +110,14 @@ export default function Hero() {
 
             <div className="flex flex-col justify-center items-center md:items-start gap-1 md:gap-2">
               <div className="flex gap-px">
-                <Star size={16} fill='oklch(0.795 0.184 86.047)' className="text-yellow-500" />
-                <Star size={16} fill='oklch(0.795 0.184 86.047)' className="text-yellow-500" />
-                <Star size={16} fill='oklch(0.795 0.184 86.047)' className="text-yellow-500" />
-                <Star size={16} fill='oklch(0.795 0.184 86.047)' className="text-yellow-500" />
-                <Star size={16} fill='oklch(0.795 0.184 86.047)' className="text-yellow-500" />
+                <Star size={16} fill='#3B82F6' className="text-accent" />
+                <Star size={16} fill='#3B82F6' className="text-accent" />
+                <Star size={16} fill='#3B82F6' className="text-accent" />
+                <Star size={16} fill='#3B82F6' className="text-accent" />
+                <Star size={16} fill='#3B82F6' className="text-accent" />
               </div>
 
-              <span className="text-xs">Trusted by 500+ Customers</span>
+              <span className="text-xs text-foreground/70">Trusted by 500+ Customers</span>
             </div>
           </div>
         </SlideEffect>

@@ -1,7 +1,8 @@
 'use client'
 
-import { MotionProps } from "motion/react"
-import * as motion from "motion/react-m"
+import { MotionProps, motion as Motion } from "motion/react"
+
+const motion = Motion as any
 
 export default function TextRevealEffect({ children, className }: { children: string } & React.ComponentProps<'span'> & MotionProps) {
   return (

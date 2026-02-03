@@ -1,14 +1,16 @@
 'use client'
 
-import * as motion from "motion/react-m"
+import { motion as Motion } from "motion/react"
 import Image from 'next/image'
+
+const motion = Motion as any
 
 export default function Carousel({ images, itemWidth = 40, itemHeight = 40, spacing = 60 }: { images: string[], itemWidth?: number, itemHeight?: number, spacing?: number }) {
 
   return (
     <div className="overflow-hidden w-full relative h-full">
-      <div className='w-16 h-full absolute top-0 left-0 bg-gradient-to-r from-secondary to-transparent z-20'></div>
-      <div className='w-16 h-full absolute top-0 right-0 bg-gradient-to-l from-secondary to-transparent z-20'></div>
+      <div className='w-16 h-full absolute top-0 left-0 bg-gradient-to-r from-muted to-transparent z-20'></div>
+      <div className='w-16 h-full absolute top-0 right-0 bg-gradient-to-l from-muted to-transparent z-20'></div>
 
       <motion.div
         className="flex space-x-0 h-fit"

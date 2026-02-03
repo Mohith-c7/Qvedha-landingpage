@@ -1,7 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion as Motion } from "motion/react";
+
+const motion = Motion as any;
 
 interface FollowCursorProps {
   size?: number;
@@ -11,7 +13,7 @@ interface FollowCursorProps {
 
 const FollowCursor = ({
   size = 8,
-  color = "black",
+  color = "#60A5FA",
   delay = 0.05,
 }: FollowCursorProps) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
