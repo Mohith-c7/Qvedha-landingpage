@@ -1,7 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion } from "motion/react";
+import { motion as Motion } from "motion/react";
+
+const motion = Motion as any;
 
 interface FollowCursorProps {
   size?: number;

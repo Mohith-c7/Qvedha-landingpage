@@ -1,10 +1,12 @@
 'use client'
 
 import React from 'react'
-import { motion } from "motion/react"
+import { motion as Motion } from "motion/react"
 import Image from 'next/image'
 import { cn } from '@/lib/utils'
 import FadeEffect from './fade-effect'
+
+const motion = Motion as any
 
 interface SpinnerProps {
   avatars: string[]

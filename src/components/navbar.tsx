@@ -4,8 +4,10 @@ import Logo from "./logo"
 import Link from "next/link"
 import { Button } from "./ui/button"
 import { AlignJustify, X } from "lucide-react"
-import { AnimatePresence, motion } from 'motion/react'
+import { AnimatePresence, motion as Motion } from 'motion/react'
 import { useState } from "react"
+
+const motion = Motion as any
 
 const settings = {
   navLinks: [

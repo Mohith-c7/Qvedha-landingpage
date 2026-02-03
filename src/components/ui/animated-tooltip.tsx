@@ -2,7 +2,9 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import { AnimatePresence, useMotionValue, useSpring, useTransform, motion } from "motion/react";
+import { AnimatePresence, useMotionValue, useSpring, useTransform, motion as Motion } from "motion/react";
+
+const motion = Motion as any;
 
 export const AnimatedTooltip = ({
   items,
