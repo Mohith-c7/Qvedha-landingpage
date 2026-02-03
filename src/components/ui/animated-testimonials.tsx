@@ -3,7 +3,7 @@
 
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { AnimatePresence } from "motion/react";
-import * as motion from "motion/react-m"
+import * as motion from "motion/react"
 import Image from "next/image";
 import { useEffect, useState } from "react";
 

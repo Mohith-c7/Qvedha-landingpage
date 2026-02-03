@@ -5,7 +5,7 @@ import Link from "next/link"
 import { Button } from "./ui/button"
 import { AlignJustify, X } from "lucide-react"
 import { AnimatePresence } from 'motion/react'
-import * as motion from "motion/react-m"
+import * as motion from "motion/react"
 import { useState } from "react"
 
 const settings = {

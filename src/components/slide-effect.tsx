@@ -1,7 +1,7 @@
 'use client'
 
 import { MotionProps, HTMLMotionProps } from "motion/react";
-import * as motion from "motion/react-m"
+import * as motion from "motion/react"
 
 interface SlideEffectProps {
   children: React.ReactNode;

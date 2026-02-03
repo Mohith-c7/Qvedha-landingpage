@@ -2,7 +2,7 @@
 'use client'
 
 import { HTMLMotionProps } from "motion/react"
-import * as motion from "motion/react-m"
+import * as motion from "motion/react"
 
 export default function TextBlurEffect({ children, ...props }: { children: string } & HTMLMotionProps<'span'>) {
   return (

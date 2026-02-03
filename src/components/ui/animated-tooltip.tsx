@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { AnimatePresence, useMotionValue, useSpring, useTransform } from "motion/react";
-import * as motion from "motion/react-m"
+import * as motion from "motion/react"
 
 export const AnimatedTooltip = ({
   items,
