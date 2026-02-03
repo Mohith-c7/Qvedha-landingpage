@@ -11,7 +11,7 @@ interface FollowCursorProps {
 
 const FollowCursor = ({
   size = 8,
-  color = "black",
+  color = "#60A5FA",
   delay = 0.05,
 }: FollowCursorProps) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });

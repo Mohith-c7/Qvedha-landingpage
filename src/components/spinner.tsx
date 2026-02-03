@@ -116,7 +116,7 @@ const LabelsCircle = ({ labels }: { labels: string[] }) => {
               }
             }}
             key={index}
-            className="absolute min-w-32 px-4 py-2 text-sm flex items-center justify-center text-black bg-accent rounded-lg"
+            className="absolute min-w-32 px-4 py-2 text-sm flex items-center justify-center text-background bg-accent rounded-lg"
             style={{
               left: `${center + x}px`,
               top: `${center + y}px`,
