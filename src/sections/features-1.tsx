@@ -37,7 +37,7 @@ const settings = {
   card_4: {
     title: 'Virtual Human Twin Validation',
     content: 'Survival constant optimization (λ ≥ 0.8). Test drug behavior on a digital twin of human biological pathways before real-world trials.',
-    image: 'https://framerusercontent.com/images/6jTglLZFhLYMIuOe7EC0QFeykU.png?scale-down-to=512',
+    image: '/twin.jpg',
   },
 }
 

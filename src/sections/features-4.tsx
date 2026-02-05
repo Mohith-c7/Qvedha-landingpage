@@ -3,7 +3,6 @@
 import Badge from "@/components/badge"
 import Card from "@/components/card"
 import SlideEffect from "@/components/slide-effect"
-import Spinner from "@/components/spinner"
 import TextRevealEffect from "@/components/text-reveal-effect"
 
 const settings = {
@@ -16,24 +15,7 @@ const settings = {
   card_1: {
     title: 'Protein & Sequence Validation',
     content: "Validate drug-protein compatibility using quantum simulations.",
-    labels: [
-      'my-site.com',
-      'example.com',
-      'my-saas.ai',
-      'my-blog.com',
-      'potfolio.me',
-      'new-site.com',
-      'client-site.io',
-    ],
-    avatars: [
-      'https://avatar.iran.liara.run/public/38',
-      'https://avatar.iran.liara.run/public/40',
-      'https://avatar.iran.liara.run/public/22',
-      'https://avatar.iran.liara.run/public/6',
-      'https://avatar.iran.liara.run/public/12',
-      'https://avatar.iran.liara.run/public/37',
-      'https://avatar.iran.liara.run/public/35'
-    ]
+    video: '/protein.mp4'
   },
   card_2: {
     title: 'Rare Disease Research',
@@ -63,13 +45,25 @@ export default function Features4() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* card 1 */}
         <SlideEffect direction="top" className="grid-cols-1 lg:col-span-2 h-full" isSpring={false}>
-          <Card className="flex flex-col lg:flex-row justify-center items-center">
+          <Card className="flex flex-col lg:flex-row justify-center items-center gap-6">
             <div className="space-y-3 md:space-y-5 flex-1">
               <h3 className="text-xl md:text-title text-primary font-medium">{settings.card_1.title}</h3>
               <p className="text-foreground/80">{settings.card_1.content}</p>
             </div>
 
-            <Spinner labels={settings.card_1.labels} avatars={settings.card_1.avatars} />
+            {/* Video */}
+            <div className="relative w-full lg:w-1/2 rounded-xl overflow-hidden">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-auto rounded-xl"
+              >
+                <source src={settings.card_1.video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </Card>
         </SlideEffect>
 

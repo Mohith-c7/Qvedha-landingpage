@@ -9,7 +9,7 @@ const settings = {
   description: 'Join the quantum revolution in pharmaceutical research. Q-VEDHA combines quantum computing, AI, and reinforcement learning to accelerate drug development from years to moments.',
   CTA: {
     content: 'Start Free Trial',
-    href: '#'
+    href: 'https://instance.qvedha.in'
   }
 }
 

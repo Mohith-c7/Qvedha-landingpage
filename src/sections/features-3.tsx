@@ -13,14 +13,14 @@ const settings = {
   title: 'Dive Into the Details',
   description: 'See beyond clicks with the power of events, A/B testing, and tag-based segmentation, drill down into single sessions, or track your performance with flexible conversion goals.',
   card_1: {
-    title: 'ALPHA_X8_SMILE_SEQ',
+    title: 'ALPHA X8 664M',
     content: 'Large Reasoning Model (LRM) for autonomous de-novo molecular generation.',
-    image: 'https://framerusercontent.com/images/3FWbibttHBsnge8Td2JRVbNo.svg'
+    image: '/664M.jpeg'
   },
   card_2: {
-    title: 'ALPHA_X8_SEQ_REASONING',
-    content: 'Thinking or Reasoning model.',
-    image: 'https://framerusercontent.com/images/eaFbEnL3er77EwtTIiUEMgYTLnQ.svg'
+    title: 'ALPHA X8 8B',
+    content: 'Large Reasoning Model (LRM) for Thinking or Reasoning.',
+    image: '/8B.png'
   },
 }
 

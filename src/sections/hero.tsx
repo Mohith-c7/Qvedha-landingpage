@@ -15,11 +15,11 @@ const settings = {
   subheadline: 'Q-VEDHA is the world’s first Quantum drug discovery engine. Accelerating life-saving medicines from years to moments.',
   mainCTA: {
     content: 'try it for free',
-    href: '#'
+    href: 'https://instance.qvedha.in'
   },
   secondaryCTA: {
     content: 'view live demo',
-    href: '#'
+    href: 'https://instance.qvedha.in'
   },
   illustration: '/ss.webp',
   reviews: [
@@ -57,6 +57,15 @@ const settings = {
 }
 
 export default function Hero() {
+  const handleChatSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    window.location.href = 'https://instance.qvedha.in';
+  };
+
+  const handleSendClick = () => {
+    window.location.href = 'https://instance.qvedha.in';
+  };
+
   return (
     <div className="relative w-full">
       {/* Background Video - Starts from absolute top (y=0, x=0) */}
@@ -101,7 +110,7 @@ export default function Hero() {
 
         {/* AI Chat Input */}
         <SlideEffect delay={0.2} className="w-full max-w-3xl mx-auto px-4 sm:px-6 mt-8">
-          <div className="relative group" suppressHydrationWarning>
+          <form onSubmit={handleChatSubmit} className="relative group" suppressHydrationWarning>
             {/* Refined Glow Effect */}
             <div className="absolute -inset-[1px] bg-gradient-to-r from-primary/20 via-primary/10 to-primary/20 rounded-[17px] opacity-0 group-hover:opacity-100 blur-sm transition-opacity duration-500"></div>
             <div className="absolute -inset-[2px] bg-gradient-to-br from-primary/5 via-transparent to-primary/5 rounded-[18px] opacity-60"></div>
@@ -115,7 +124,11 @@ export default function Hero() {
                   placeholder="Ask Q-VEDHA anything about drug discovery..."
                   className="flex-1 bg-transparent text-xs sm:text-sm text-foreground placeholder:text-foreground/40 focus:outline-none py-1"
                 />
-                <button className="p-1.5 sm:p-2 rounded-lg bg-muted/50 hover:bg-muted text-foreground/80 hover:text-foreground transition-all flex-shrink-0">
+                <button 
+                  type="submit"
+                  onClick={handleSendClick}
+                  className="p-1.5 sm:p-2 rounded-lg bg-muted/50 hover:bg-muted text-foreground/80 hover:text-foreground transition-all flex-shrink-0"
+                >
                   <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
                   </svg>
@@ -151,10 +164,9 @@ export default function Hero() {
 
                   {/* Model Selection */}
                   <div className="relative" suppressHydrationWarning>
-                    <select className="appearance-none bg-transparent border border-border/40 hover:border-primary/50 rounded-lg pl-2 sm:pl-3 pr-6 sm:pr-8 py-1 sm:py-1.5 text-[10px] sm:text-xs text-foreground/80 hover:text-foreground focus:outline-none focus:ring-1 focus:ring-primary/50 focus:border-primary/50 transition-all cursor-pointer">
-                      <option value="Design">GPT-4</option>
-                      <option value="Test">Claude 3.5</option>
-                      <option value="Analyze">Gemini Pro</option>
+                    <select className="appearance-none bg-black border border-border/40 hover:border-primary/50 rounded-lg pl-2 sm:pl-3 pr-6 sm:pr-8 py-1 sm:py-1.5 text-[10px] sm:text-xs text-foreground/80 hover:text-foreground focus:outline-none focus:ring-1 focus:ring-primary/50 focus:border-primary/50 transition-all cursor-pointer">
+                      <option value="Alpha X8 664M" className="bg-black text-foreground">Alpha X8 664M</option>
+                      <option value="Alpha X8 8B" className="bg-black text-foreground">Alpha X8 8B</option>
                     </select>
                     <div className="absolute right-1.5 sm:right-2 top-1/2 -translate-y-1/2 pointer-events-none">
                       <svg className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-foreground/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -175,7 +187,7 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-          </div>
+          </form>
           
           {/* Helper Text */}
           <div className="flex items-center justify-center gap-2 sm:gap-3 mt-3 text-[10px] sm:text-xs text-foreground/40 flex-wrap">

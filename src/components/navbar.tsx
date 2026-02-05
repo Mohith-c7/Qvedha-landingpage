@@ -19,7 +19,7 @@ const settings = {
   ],
   cta: {
     content: 'try it for free',
-    href: '/'
+    href: 'https://instance.qvedha.in'
   }
 }
 
